@@ -2,23 +2,23 @@
 
 ## 代码检查工具
 ### 工具
-* pylint  
+* pylint （[参考文档](https://pypi.org/project/pylint/)） 
 * pycharm --> code --> Reformat Code  格式化当前文件代码格式
 * pycharm --> 右击项目 --> Inspect Code  根据pep8格式检查当前项目.
 
 ### 提交
 * 每次提交代码前，自己 Inspect Code检查一遍代码，尽量修改错误格式。
-* 禁止直接修改master分支，用子分支去提交，然后合并代码。
-* 需要在提交commit里面，写明修改内容。
+* 不可以直接修改master分支，应当用子分支去提交，然后合并代码。
+* 提交的同时需要在提交commit里面，写明修改内容。
 
 
 
 ## 概述
 ### 编码
-* 如无特殊情况, 文件一律使用 UTF-8 编码
+* 如无特殊情况, 文件统一使用 UTF-8 编码
 * 文件头设置
 ```
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3.6a
 # -*- coding: utf-8 -*-
 ```
 
@@ -35,7 +35,7 @@ import x
 from x import y
 from x import y as z
 
-禁止import  x,y
+不能使用的写法：import  x,y
 ```
 
 ### 字符格式化
